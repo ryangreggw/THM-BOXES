@@ -14,8 +14,7 @@
 - A quick google search on this particular Linux version's CVE's will return:
   - CVE-2015-1328
   - https://www.exploit-db.com/exploits/37292
-
-![Alt text](<linux 3.13.0-24 cve.jpg>)
+![linux 3 13 0-24 cve](https://github.com/ryangreggw/THM-BOXES/assets/25268281/1079c4c1-ca3a-4af0-95cb-d1b2d2b27b0e)
 
 ### ***# TASK 5: PRIVILEGE ESCALATION: KERNEL EXPLOITS***
 - SSH into the Karen VM.
@@ -34,11 +33,12 @@
 - Lastly, we're asked to enumerate the content of the file "flag1.txt."
   - ```find -name flag1.txt```
   
-![Alt text](<nano cve.jpg>)
-![Alt text](<simple http server.jpg>)
-![Alt text](<wget from simple http server.jpg>)
-![Alt text](<executable script.jpg>)
-![Alt text](<find a file.jpg>)
+![nano cve](https://github.com/ryangreggw/THM-BOXES/assets/25268281/ae4e0655-e15b-4f4a-bb26-c44e766365b9)
+![simple http server](https://github.com/ryangreggw/THM-BOXES/assets/25268281/5b9d2195-4932-4ec3-a203-330c981b85d5)
+![wget from simple http server](https://github.com/ryangreggw/THM-BOXES/assets/25268281/45ab75fd-d81a-47d6-9d93-f8d7a9e3b666)
+![executable script](https://github.com/ryangreggw/THM-BOXES/assets/25268281/cf734e3a-b832-4521-9bb9-b57821e02be3)  
+![find a file](https://github.com/ryangreggw/THM-BOXES/assets/25268281/474085d0-35d7-4177-960d-605225297be8)
+
 
 ### ***# TASK 6: PRIVILEGE ESCALATION: SUDO***
 - To find the programs that karen can run with sudo, use: 
@@ -55,9 +55,9 @@
   - Use the command: ```sudo find . -exec /bin/sh \; -quit```
 - The last question asks for Franks hashed password. Since we've obtained root access just cat the password file:
   - ```cat /etc/shadow```
-  
-![Alt text](<sudo find priv esc.jpg>)
-![Alt text](<linux password file.jpg>)
+ 
+![sudo find priv esc](https://github.com/ryangreggw/THM-BOXES/assets/25268281/1d5ab2c1-9544-482d-9b10-c0bffbb9c883)
+![linux password file](https://github.com/ryangreggw/THM-BOXES/assets/25268281/dc3a00ec-53a5-4ab1-b305-8536a8d677b0)
 
 ### ***# TASK 7: PRIVILEGE ESCALATION: SUID***
 - To find list files that have SUID or SGID bits set, use the command: 
@@ -92,12 +92,12 @@
         - should return ```./home/ubuntu/flag3.txt```
       - With this, you can use base64 to read it (since it has a SUID bit allowing you to run it even though you don't have root privileges.).
         - ```base64 ./home/ubuntu/flag3.txt | base64 -d```
-  
-![Alt text](<base64 SUID.jpg>)
-![Alt text](passwd.txt.jpg)
-![Alt text](<unshadow command.jpg>)
-![Alt text](johntheripper.jpg)
-![Alt text](<base64 SUID bit.jpg>)
+
+![base64 SUID](https://github.com/ryangreggw/THM-BOXES/assets/25268281/6536c430-6890-43cd-96fe-4564c61daf40)
+![passwd txt](https://github.com/ryangreggw/THM-BOXES/assets/25268281/9a2a3d64-1ee3-478b-96de-d6aa80e2c7fb)
+![unshadow command](https://github.com/ryangreggw/THM-BOXES/assets/25268281/b6093246-40cd-40d7-8417-c896a56c0bb9)
+![johntheripper](https://github.com/ryangreggw/THM-BOXES/assets/25268281/53fcfd26-98bc-40bb-b4ca-36abbf6930f6)
+![base64 SUID bit](https://github.com/ryangreggw/THM-BOXES/assets/25268281/1b52b08d-11dc-40ec-886c-e9e6c73f38ee)
 
 ### ***# TASK 8: PRIVILEGE ESCALATION: CAPABILITIES***
 - The first questions asks us how many binaries have set capabilities? In order to find out, we use:
@@ -114,8 +114,8 @@
   - ```find -name flag4.txt```
   - Last, cat the file to get the answer. 
 
-![Alt text](<capabilities view pwd.jpg>)
-![Alt text](<getcap-r  root privilege.jpg>)
+![capabilities view pwd](https://github.com/ryangreggw/THM-BOXES/assets/25268281/5a0a5a06-32d5-4522-a3b1-2e1eba4fff7b)
+![getcap-r  root privilege](https://github.com/ryangreggw/THM-BOXES/assets/25268281/f21f6843-46bb-4ac8-9658-3e026b0f707c)
 
 ### ***# TASK 9: PRIVILEGE ESCALATION: CRON JOBS***
 - The purpose of crontabs is automation. You schedule a particular task to run at certain intervals. 
@@ -141,10 +141,10 @@
       - Use ```"unshadow"``` command to combine the two files into one. 
       - Lastly, use john the ripper to crack the hashed password. 
 
-![Alt text](<karen crontab.jpg>)
-![Alt text](<crontab listener.jpg>)
-![Alt text](<finding matts pass.jpg>)
-![Alt text](<matts password crontabs.jpg>)
+![karen crontab](https://github.com/ryangreggw/THM-BOXES/assets/25268281/b4e13235-a821-42d6-932a-21fab1bf4a24)  
+![crontab listener](https://github.com/ryangreggw/THM-BOXES/assets/25268281/0df06661-6485-4590-b1b4-8d8d9cb642f6)  
+![finding matts pass](https://github.com/ryangreggw/THM-BOXES/assets/25268281/821d6e04-1c57-4a1f-8634-1954c3fcd728)  
+![matts password crontabs](https://github.com/ryangreggw/THM-BOXES/assets/25268281/6fe306c7-8a01-4e8a-b5a0-fcd659f05c0b)
 
 ### ***# TASK 10: PRIVILEGE ESCALATION: PATH***
 1. SSH into karen's machine. 
@@ -176,9 +176,9 @@
 10. Run "test."
     - ```./test```
 
-![Alt text](<path script to execute as root.jpg>)  
-![Alt text](<path escalation.jpg>)  
-![Alt text](<path sudo su.jpg>)
+![path script to execute as root](https://github.com/ryangreggw/THM-BOXES/assets/25268281/c1c2cec4-b564-4e9c-bb7a-0af588e5725b)  
+![path escalation](https://github.com/ryangreggw/THM-BOXES/assets/25268281/6d0209e7-635e-44fc-9c26-d5f8b23e6dc2)  
+![path sudo su](https://github.com/ryangreggw/THM-BOXES/assets/25268281/894cee0f-81e6-4ba4-b810-ac5c5afcf999)
 
 ### ***# PRIVILEGE ESCALATION: NFS***
 1. Open two tabs in your terminal. 
@@ -226,13 +226,11 @@
     - ```./<file>```
   - You should now have root access. 
 
-
-
-![Alt text](<NFS FILES.jpg>)
-![Alt text](<mountable NFS files.jpg>)
-![Alt text](<setting SUID bits for binbash nfs.jpg>)
-![Alt text](<binbash SUID executable.jpg>)
-![Alt text](<tmp NFS root.jpg>)
+![NFS FILES](https://github.com/ryangreggw/THM-BOXES/assets/25268281/8af8945f-b48c-4cb1-9b3d-fee6c63edaa9)  
+![mountable NFS files](https://github.com/ryangreggw/THM-BOXES/assets/25268281/c4149b10-69b4-4dd0-8a43-4cbc52e0e432)  
+![setting SUID bits for binbash nfs](https://github.com/ryangreggw/THM-BOXES/assets/25268281/cced11ac-d009-468b-a8ad-8bb2bdcea6ae)
+![binbash SUID executable](https://github.com/ryangreggw/THM-BOXES/assets/25268281/e3e541aa-c6c3-4ce7-9429-baa85570a823)
+![tmp NFS root](https://github.com/ryangreggw/THM-BOXES/assets/25268281/cdd174f8-7410-45f0-8021-96f6d3694a1f)
 
 ### ***# NFS NOTES:***
 - Network File Sharing configuration is kept in the ```/etc/exports``` file. 
@@ -289,12 +287,12 @@
   - GTFObins has the command: 
     - ```./base64 "$LFILE" | base64 --decode```
     - For ```./base64``` you'll substitute the file path that you were given when looking for files with SUID bits. In this case it was ```/usr/bin/base64```.
-  
-![Alt text](<flag1 capstone.jpg>)
-![Alt text](<sudo find root.jpg>)
-![Alt text](<flag2 linpriv.jpg>)
-![Alt text](<file SUID root.jpg>) 
-![Alt text](<base64 SUID bit.jpg>)  
+
+![flag1 capstone](https://github.com/ryangreggw/THM-BOXES/assets/25268281/ed621f1a-a63b-47dd-8d96-cf72e94c1adb)
+![sudo find root](https://github.com/ryangreggw/THM-BOXES/assets/25268281/95fc75cd-c5ad-4544-8fe1-f74e3a414ddc)
+![flag2 linpriv](https://github.com/ryangreggw/THM-BOXES/assets/25268281/0d65ca32-ac03-4146-9bc7-358ed3d8397b)
+![file SUID root](https://github.com/ryangreggw/THM-BOXES/assets/25268281/d5540884-221a-4dd2-9bcc-bbc9d5e5f60e)
+![base64 SUID bit](https://github.com/ryangreggw/THM-BOXES/assets/25268281/a5f8bfbf-3be6-444c-9703-a5b583fc5ffd)
 
 ### * NONE OF THE PRECEDING CODE WAS MINE AND I DO NOT TAKE CREDIT FOR IT. I DO TAKE CREDIT FOR THE MISTAKES, THOUGHTS, AND EXPRESSION OF SAID THOUGHTS. THE FOLLOWING ARE SOME OF THE RESOURCES THAT I USED: 
 - LinPeas: https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS  
