@@ -402,7 +402,8 @@ run or exploit
 
 ***#RULE64:***
 
-![rule based attack](https://github.com/ryangreggw/THM-BOXES/assets/25268281/d8b0b029-a18f-4b00-9012-3f3cf06ce596)
+![rule based attack](https://github.com/ryangreggw/THM-BOXES/assets/25268281/6705d241-a25d-4d17-8a56-bb88c94d5219)
+
 
 
 ***#QUESTION:*** 
