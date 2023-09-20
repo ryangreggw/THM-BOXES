@@ -370,7 +370,8 @@ run or exploit
 
 ![hashcat hash modes](https://github.com/ryangreggw/THM-BOXES/assets/25268281/5e104c26-e64d-44cc-8fa0-4a70fd57c0a5)
 
-***#QUESTION 3: ***
+***#QUESTION 3:***
+
 ![hashcat brute force command](https://github.com/ryangreggw/THM-BOXES/assets/25268281/4a7a7d00-74f9-4a90-8acc-4e0b1f74d060)
 
 
