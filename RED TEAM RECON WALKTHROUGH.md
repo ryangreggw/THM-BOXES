@@ -461,8 +461,10 @@ run or exploit
   - Get the flag.txt since you're unable to read it. 
     - ```get flag.txt```. 
   - Get out of ftp with: ```exit```. 
-  - Read the file. 
-***#QUESTION 2:*** 
+  - Read the file.
+
+***#QUESTION 2:***
+
 1. ```Cewl``` the website: "https://clinic.thmredteam.com" to create your custom wordlist: 
    - ```cewl -m 8 -w <file name you want> <url you're pulling from>```
 2. Append the ```john.conf``` file with the rule that created in Task 6: Az"[0-9][0-9]" ^[!@]
