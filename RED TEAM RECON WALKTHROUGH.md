@@ -387,7 +387,8 @@ run or exploit
         - sudo ```apt install john```
 
 ***#EXPANDING PASSWORD LIST WITH A RULE BASED ATTACK:***
-- If you were getting frustrated trying to mirror the "Rule-based" attack using the best64 rule, the world list of "single-password-list.txt," does not exist on the attack box or a list when you download john. The "single-password-list.txt" is a list that they created. So, what you want to do to be able to use the command: ```john --wordlist=/tmp/single-password-list.txt --rules=best64 --stdout | wc -l``` is create a file with the string: ```"tryhackme."``` *If you're following THM. 
+- If you were getting frustrated trying to mirror the "Rule-based" attack using the best64 rule, the world list of "single-password-list.txt," does not exist on the attack box or a list when you download john. The "single-password-list.txt" is a list that they created. So, what you want to do to be able to use the command: ```john --wordlist=/tmp/single-password-list.txt --rules=best64 --stdout | wc -l``` is create a file with the string: ```"tryhackme."``` *If you're following THM.
+   
   1. You can create your file anywhere, I chose to move into the tmp folder. 
   2. ```nano best64rule.txt```
   3. Input the string: ```tryhackme```
