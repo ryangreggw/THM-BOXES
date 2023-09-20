@@ -75,7 +75,7 @@
 
 ***#SYSINTERNAL SUITE ON WINDOWS COMPUTERS:*** 
 
-![2023-09-19 09_48_19-SysinternalsSuite](https://github.com/ryangreggw/THM-BOXES/assets/25268281/26ed0aac-3ecd-48d1-8dbf-6a4d2bb7bed2)
+![2023-09-19 09_48_19-SysinternalsSuite](https://github.com/ryangreggw/THM-BOXES/assets/25268281/15652f25-b7c8-4cc5-b0f2-d603212f70d8)
 
 ***#CHECKING WINDOWS REGISTRY THROUGH PS:*** 
 - `C:\Users\ryang\OneDrive\Documents\pentest+\windows registry ps command.jpg`
