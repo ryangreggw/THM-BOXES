@@ -527,6 +527,7 @@ run or exploit
     - EG): ```john --wordlist=clinic.lst --rules=Single-Extra --stdout >> clinic-singleextra.lst```
 
 ***#COMPILING LISTS WITH RULES:***
+
 ![hydra combining lists with rules](https://github.com/ryangreggw/THM-BOXES/assets/25268281/5cd48420-4411-47c2-977c-c631afb7be81)
 
 
@@ -539,6 +540,7 @@ run or exploit
     - When you're completing this question, make sure to use the url given, as it is different from the one in question 3. If not, you won't be able to login with the password you obtain. 
   
 #HYDRA HTTP GET POST COMMAND WITH USERNAME/WORDLIST/IP ADDRESS
+
 ![hydra password with url and username](https://github.com/ryangreggw/THM-BOXES/assets/25268281/330c9263-2661-46d5-8ab9-d7d476afe4cb)
 
 
