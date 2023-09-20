@@ -62,7 +62,7 @@ shell.Run("C:\Windows\System32\calc.exe " & WScript.ScriptFullName),0,True
 ![VBScript](https://github.com/ryangreggw/THM-BOXES/assets/25268281/d5a6e5d4-b053-4b43-89e7-d573b6a7077e)
 
 
-## **TASK4: AN HTML APPLICATION (HTA)**
+## **TASK4: A HTML APPLICATION (HTA)**
 - HTA allows you to create downloadable files that take all the information regarding how the application is displayed/rendered. 
 - HTAs are dynamic HTML pages contianing JScript and VBScript. 
 - Living-of-the-land Binaries (LOLBINS) tool ``mshta`` is used to run HTA files.  
