@@ -32,7 +32,7 @@
         - Run the module: 
           - ```run```
 
-# WEAPONIZATION
+# WEAPONIZATION BOX
 
 ## **TASK 2: DEPLOY THE WINDOWS MACHINE**
 - RDP into the windows machine: 
